@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import NavigationBar from "./component/navigationBar";
+// import BodyContent from "./components/bodycontent";
+import Footer from "./component/footer.js";
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import MainPage from "./component/mainPage.js";
+import Motorcyle from "./component/motorcycle.js"
+import About from "./component/about.js";
+import FullDetails from "./component/fulldetails.js";
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+    <>
+      <BrowserRouter>
+        <NavigationBar></NavigationBar>
+        <Routes>
+          <Route path="/" element={<MainPage></MainPage>}></Route>
+          <Route path="/motor" element={<Motorcyle></Motorcyle>}></Route>
+          <Route path="/about" element={<About></About>}></Route>
+          <Route path="/fulldetail" element={<FullDetails></FullDetails>}></Route>
+        </Routes>
+        <Footer></Footer>  
+      </BrowserRouter>
+
+
+    </>  
+    
+    
   );
 }
 
