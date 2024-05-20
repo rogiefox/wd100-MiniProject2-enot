@@ -8,7 +8,7 @@ const MainPage = () => {
         <>
             
             <img src={motorHeader} alt="" className="w-100 g-2"/>
-            <SearchItems></SearchItems>
+            {/* <SearchItems></SearchItems> */}
             <div className="container mt-3">
                 <div className="row g-5">
                     <FeaturedMotor></FeaturedMotor>

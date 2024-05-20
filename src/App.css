@@ -37,7 +37,30 @@
   }
 }
 
-.Nav.Link{
-  text-decoration: none;
-  
+.card-body h3{
+  font-family:'Poppins', sans-serif;
+  font-weight: 800;
+}
+.card-body h4{
+  font-family:'Poppins', sans-serif;
+  font-weight: 800;
+}
+
+.card-body h1{
+  font-family:'Poppins', sans-serif;
+  font-weight: 800;
+}
+
+.card-body h2{
+  font-family:'Poppins', sans-serif;
+  font-weight: 800;
+}
+
+.col-md-4:hover{
+  transform:  scale(1.1);
+}
+
+.container h1{
+  font-family:'Poppins', sans-serif;
+  font-weight: 700;
 }

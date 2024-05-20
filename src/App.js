@@ -4,10 +4,10 @@ import NavigationBar from "./component/navigationBar";
 import Footer from "./component/footer.js";
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import MainPage from "./component/mainPage.js";
-import Motorcyle from "./component/motorcycle.js"
 import About from "./component/about.js";
 import FullDetails from "./component/fulldetails.js";
-
+import './App.css';
+import SearchItems from "./component/search.js";
 
 
 
@@ -19,9 +19,9 @@ function App() {
         <NavigationBar></NavigationBar>
         <Routes>
           <Route path="/" element={<MainPage></MainPage>}></Route>
-          <Route path="/motor" element={<Motorcyle></Motorcyle>}></Route>
           <Route path="/about" element={<About></About>}></Route>
           <Route path="/fulldetail" element={<FullDetails></FullDetails>}></Route>
+          {/* <Route path="/search" element={<SearchItems></SearchItems>}></Route> */}
         </Routes>
         <Footer></Footer>  
       </BrowserRouter>

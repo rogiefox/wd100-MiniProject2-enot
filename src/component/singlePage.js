@@ -32,7 +32,7 @@ const FullDescription = () => {
         <>
 
                     <div className="col-md-12">
-                        <div className="card">
+                        <div className="card shadow">
                             <img src={`../img/${data.model}.jpg`} alt="" className="w-100 object-fit rounded" height={600} />
                             <div className="card-body">
                                 <h1>{data.make}</h1>
